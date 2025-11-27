@@ -1,0 +1,59 @@
+﻿@model MvcEjercicios.Models.PasswordViewModel
+
+@{
+    ViewData["Title"] = "Generador de Contraseñas";
+}
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h1>🔐 Generador de Contraseñas Seguras (Ejercicio 3)</h1>
+        <hr />
+
+        <form asp-controller="Password" asp-action="Generar" method="post">
+            <div class="card p-4 mb-4">
+                <h4 class="card-title">Opciones de Contraseña</h4>
+
+                <div class="mb-3">
+                    <label asp-for="Longitud" class="form-label">Longitud de la Contraseña (<span id="longitudValue">@Model.Longitud</span>):</label>
+                    @* Input Range (slider) y JavaScript simple para actualizar el número *@
+                    <input asp-for="Longitud" type="range" min="8" max="30" class="form-range" 
+                           oninput="document.getElementById('longitudValue').innerText = this.value" />
+                </div>
+                
+                <div class="form-check">
+                    <input asp-for="IncluirMayusculas" type="checkbox" class="form-check-input" />
+                    <label asp-for="IncluirMayusculas" class="form-check-label">Incluir Letras Mayúsculas (A-Z)</label>
+                </div>
+                <div class="form-check">
+                    <input asp-for="IncluirMinusculas" type="checkbox" class="form-check-input" />
+                    <label asp-for="IncluirMinusculas" class="form-check-label">Incluir Letras Minúsculas (a-z)</label>
+                </div>
+                <div class="form-check">
+                    <input asp-for="IncluirNumeros" type="checkbox" class="form-check-input" />
+                    <label asp-for="IncluirNumeros" class="form-check-label">Incluir Números (0-9)</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input asp-for="IncluirSimbolos" type="checkbox" class="form-check-input" />
+                    <label asp-for="IncluirSimbolos" class="form-check-label">Incluir Símbolos (!#$...)</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Generar Contraseña</button>
+            </div>
+        </form>
+
+        @* Muestra el resultado si se generó una contraseña *@
+        @if (!string.IsNullOrEmpty(Model.ContraseñaGenerada) && !Model.ContraseñaGenerada.StartsWith("Error"))
+        {
+            <div class="alert alert-success mt-4 p-4 text-break">
+                <h4>Tu Contraseña Segura:</h4>
+                <code class="fs-5">@Model.ContraseñaGenerada</code>
+            </div>
+        }
+        else if (Model.ContraseñaGenerada.StartsWith("Error"))
+        {
+            <div class="alert alert-danger mt-4">
+                @Model.ContraseñaGenerada
+            </div>
+        }
+    </div>
+</div>
