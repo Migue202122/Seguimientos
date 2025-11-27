@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|c:\\users\\jaram\\net8-mvc-ejercicios\\mvcejercicios\\mvcejercicios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|solutionrelative:mvcejercicios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|c:\\users\\jaram\\net8-mvc-ejercicios\\mvcejercicios\\mvcejercicios\\views\\tareas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|solutionrelative:mvcejercicios\\views\\tareas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|c:\\users\\jaram\\net8-mvc-ejercicios\\mvcejercicios\\mvcejercicios\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|solutionrelative:mvcejercicios\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|c:\\users\\jaram\\net8-mvc-ejercicios\\mvcejercicios\\mvcejercicios\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|solutionrelative:mvcejercicios\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Program.cs",
+              "RelativeDocumentMoniker": "MvcEjercicios\\Program.cs",
+              "ToolTip": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Program.cs",
+              "RelativeToolTip": "MvcEjercicios\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T00:56:45.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Views\\Tareas\\Index.cshtml",
+              "RelativeDocumentMoniker": "MvcEjercicios\\Views\\Tareas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Views\\Tareas\\Index.cshtml",
+              "RelativeToolTip": "MvcEjercicios\\Views\\Tareas\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T00:55:38.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TareasController.cs",
+              "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Controllers\\TareasController.cs",
+              "RelativeDocumentMoniker": "MvcEjercicios\\Controllers\\TareasController.cs",
+              "ToolTip": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Controllers\\TareasController.cs",
+              "RelativeToolTip": "MvcEjercicios\\Controllers\\TareasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T00:51:42.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tarea.cs",
+              "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Models\\Tarea.cs",
+              "RelativeDocumentMoniker": "MvcEjercicios\\Models\\Tarea.cs",
+              "ToolTip": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Models\\Tarea.cs",
+              "RelativeToolTip": "MvcEjercicios\\Models\\Tarea.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA1wAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T00:48:48.676Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

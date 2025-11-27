@@ -1,0 +1,43 @@
+﻿@model List<MvcEjercicios.Models.Tarea>
+
+@{
+    ViewData["Title"] = "Lista de Tareas";
+}
+
+<h1>📝 Lista de Tareas (Ejercicio 1)</h1>
+
+@* Formulario para AGREGAR una nueva tarea *@
+<form asp-controller="Tareas" asp-action="Agregar" method="post" class="mb-4">
+    <div class="input-group">
+        <input type="text" name="descripcion" class="form-control" placeholder="Nueva tarea..." required />
+        <button type="submit" class="btn btn-primary">Agregar</button>
+    </div>
+</form>
+
+<ul class="list-group">
+    @foreach (var tarea in Model)
+    {
+        <li class="list-group-item d-flex justify-content-between align-items-center @(tarea.Completada ? "list-group-item-success" : "")">
+
+            @* Muestra la descripción con tachado si está completada *@
+            <span style="@(tarea.Completada ? "text-decoration: line-through;" : "")">
+                @tarea.Descripcion
+            </span>
+
+            <div>
+                @* Botón para cambiar el estado (Marcar como Completada/Pendiente) *@
+                <a asp-controller="Tareas" asp-action="MarcarCompletada" asp-route-id="@tarea.Id"
+                   class="btn btn-sm @(tarea.Completada ? "btn-warning" : "btn-success")">
+                    @(tarea.Completada ? "Marcar Pendiente" : "Completar")
+                </a>
+
+                @* Botón para ELIMINAR la tarea *@
+                <a asp-controller="Tareas" asp-action="Eliminar" asp-route-id="@tarea.Id"
+                   class="btn btn-sm btn-danger ml-2"
+                   onclick="return confirm('¿Estás seguro de que quieres eliminar esta tarea?');">
+                    Eliminar
+                </a>
+            </div>
+        </li>
+    }
+</ul>
