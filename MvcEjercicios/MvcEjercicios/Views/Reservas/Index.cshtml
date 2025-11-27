@@ -1,0 +1,90 @@
+﻿@model MvcEjercicios.Models.ReservasViewModel
+
+@{
+    ViewData["Title"] = "Sistema de Reservas";
+}
+
+<h1>🗓️ Sistema de Reservas de Citas (Ejercicio 5) </h1>
+<hr />
+
+@* Sección de mensajes de estado (Éxito/Error) *@
+@if (!string.IsNullOrEmpty(Model.MensajeEstado))
+{
+    <div class="alert @(Model.RegistroExitoso ? "alert-success" : "alert-danger") alert-dismissible fade show" role="alert">
+        @Model.MensajeEstado
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="row">
+    @* Columna 1: Formulario de Nueva Reserva *@
+    <div class="col-md-5">
+        <div class="card p-4 mb-4">
+            <h5 class="card-title">Confirmar Nueva Reserva</h5>
+
+            <form asp-controller="Reservas" asp-action="Confirmar" method="post">
+
+                @* Campo: Nombre del Cliente *@
+                <div class="mb-3">
+                    <label asp-for="NuevaReserva.NombreCliente" class="form-label">Nombre del Cliente</label>
+                    <input asp-for="NuevaReserva.NombreCliente" class="form-control" />
+                    <span asp-validation-for="NuevaReserva.NombreCliente" class="text-danger"></span>
+                </div>
+
+                @* Campo: Servicio (Dropdown) *@
+                <div class="mb-3">
+                    <label asp-for="NuevaReserva.Servicio" class="form-label">Servicio Requerido</label>
+                    <select asp-for="NuevaReserva.Servicio" class="form-select">
+                        <option value="">-- Seleccionar Servicio --</option>
+                        @foreach (var servicio in MvcEjercicios.Controllers.ReservasController.ServiciosDisponibles)
+                        {
+                            <option value="@servicio">@servicio</option>
+                        }
+                    </select>
+                    <span asp-validation-for="NuevaReserva.Servicio" class="text-danger"></span>
+                </div>
+
+                @* Campo: Fecha y Hora *@
+                <div class="mb-3">
+                    <label asp-for="NuevaReserva.FechaHora" class="form-label">Fecha y Hora</label>
+                    @* Input DateTime-local permite seleccionar fecha y hora en el mismo campo *@
+                    <input asp-for="NuevaReserva.FechaHora" type="datetime-local" class="form-control" />
+                    <span asp-validation-for="NuevaReserva.FechaHora" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Confirmar Reserva</button>
+            </form>
+        </div>
+    </div>
+
+    @* Columna 2: Listado de Reservas Existentes *@
+    <div class="col-md-7">
+        <h5 class="mb-3">Próximas Reservas (@Model.ReservasExistentes.Count)</h5>
+
+        @if (Model.ReservasExistentes.Any())
+        {
+            <ul class="list-group">
+                @foreach (var reserva in Model.ReservasExistentes)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-1 text-info">@reserva.Servicio</h6>
+                            <p class="mb-1">Cliente: @reserva.NombreCliente</p>
+                        </div>
+                        <span class="badge bg-primary rounded-pill p-2">@reserva.FechaHoraDisplay</span>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <div class="alert alert-info">No hay reservas programadas.</div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
