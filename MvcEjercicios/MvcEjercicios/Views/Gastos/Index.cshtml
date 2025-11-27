@@ -1,0 +1,109 @@
+﻿@model MvcEjercicios.Models.ResumenGastosViewModel
+
+@{
+    ViewData["Title"] = "Gestor de Gastos";
+    var mesNombre = DateTime.Today.ToString("MMMM yyyy");
+}
+
+<h1>📊 Gestor de Gastos - Mes de @mesNombre</h1>
+<hr />
+
+<div class="row">
+    @* Columna 1: Formulario de Registro de Nuevo Gasto *@
+    <div class="col-md-4">
+        <div class="card p-3 mb-4">
+            <h5 class="card-title">Registrar Nuevo Gasto</h5>
+
+            <form asp-controller="Gastos" asp-action="Registrar" method="post">
+
+                @* Campo: Monto *@
+                <div class="mb-3">
+                    <label asp-for="NuevoGasto.Monto" class="form-label">Monto ($)</label>
+                    <input asp-for="NuevoGasto.Monto" type="number" step="0.01" min="0.01" class="form-control" />
+                    <span asp-validation-for="NuevoGasto.Monto" class="text-danger"></span>
+                </div>
+
+                @* Campo: Descripción *@
+                <div class="mb-3">
+                    <label asp-for="NuevoGasto.Descripcion" class="form-label">Descripción</label>
+                    <input asp-for="NuevoGasto.Descripcion" class="form-control" />
+                    <span asp-validation-for="NuevoGasto.Descripcion" class="text-danger"></span>
+                </div>
+
+                @* Campo: Categoría (Dropdown) *@
+                <div class="mb-3">
+                    <label asp-for="NuevoGasto.Categoria" class="form-label">Categoría</label>
+                    <select asp-for="NuevoGasto.Categoria" class="form-select">
+                        <option value="">-- Seleccionar Categoría --</option>
+                        @foreach (var cat in MvcEjercicios.Controllers.GastosController.Categorias)
+                        {
+                            <option value="@cat">@cat</option>
+                        }
+                    </select>
+                    <span asp-validation-for="NuevoGasto.Categoria" class="text-danger"></span>
+                </div>
+
+                @* Campo: Fecha *@
+                <div class="mb-3">
+                    <label asp-for="NuevoGasto.Fecha" class="form-label">Fecha</label>
+                    <input asp-for="NuevoGasto.Fecha" type="date" class="form-control" />
+                    <span asp-validation-for="NuevoGasto.Fecha" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-success mt-2">Guardar Gasto</button>
+            </form>
+        </div>
+    </div>
+
+    @* Columna 2: Resumen Mensual y Por Categoría *@
+    <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-header">Resumen Total del Mes</div>
+            <div class="card-body">
+                <h1 class="card-title">$@Model.TotalMensual.ToString("N2")</h1>
+                <p class="card-text">Total de gastos registrados en @mesNombre.</p>
+            </div>
+        </div>
+
+        <div class="card p-3">
+            <h5 class="card-title">Desglose por Categoría</h5>
+            <ul class="list-group list-group-flush">
+                @foreach (var item in Model.TotalesPorCategoria)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        @item.Key
+                        <span class="badge bg-secondary rounded-pill">$@item.Value.ToString("N2")</span>
+                    </li>
+                }
+            </ul>
+            @if (!Model.TotalesPorCategoria.Any())
+            {
+                <p class="mt-2 text-muted">No hay gastos registrados este mes.</p>
+            }
+        </div>
+    </div>
+
+    @* Columna 3: Listado de Gastos del Mes *@
+    <div class="col-md-4">
+        <h5 class="mb-3">Gastos Recientes (@Model.Gastos.Count)</h5>
+        <ul class="list-group">
+            @foreach (var gasto in Model.Gastos)
+            {
+                <li class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="mb-1 text-primary">@gasto.Descripcion</h6>
+                        <small class="text-muted">@gasto.Fecha.ToString("dd/MM")</small>
+                    </div>
+                    <p class="mb-1">Categoría: @gasto.Categoria</p>
+                    <span class="fw-bold text-danger fs-5">-$@gasto.Monto.ToString("N2")</span>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

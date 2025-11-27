@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|c:\\users\\jaram\\net8-mvc-ejercicios\\mvcejercicios\\mvcejercicios\\views\\gastos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|solutionrelative:mvcejercicios\\views\\gastos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|c:\\users\\jaram\\net8-mvc-ejercicios\\mvcejercicios\\mvcejercicios\\models\\gastoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|solutionrelative:mvcejercicios\\models\\gastoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|c:\\users\\jaram\\net8-mvc-ejercicios\\mvcejercicios\\mvcejercicios\\models\\resumengastosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|solutionrelative:mvcejercicios\\models\\resumengastosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|c:\\users\\jaram\\net8-mvc-ejercicios\\mvcejercicios\\mvcejercicios\\controllers\\gastoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|solutionrelative:mvcejercicios\\controllers\\gastoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|c:\\users\\jaram\\net8-mvc-ejercicios\\mvcejercicios\\mvcejercicios\\views\\password\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E3C2842A-9032-4817-97CC-4E0517E536AA}|MvcEjercicios\\MvcEjercicios.csproj|solutionrelative:mvcejercicios\\views\\password\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -68,6 +84,58 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Views\\Gastos\\Index.cshtml",
+              "RelativeDocumentMoniker": "MvcEjercicios\\Views\\Gastos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Views\\Gastos\\Index.cshtml",
+              "RelativeToolTip": "MvcEjercicios\\Views\\Gastos\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T02:20:00.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GastosController.cs",
+              "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Controllers\\GastosController.cs",
+              "RelativeDocumentMoniker": "MvcEjercicios\\Controllers\\GastosController.cs",
+              "ToolTip": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Controllers\\GastosController.cs",
+              "RelativeToolTip": "MvcEjercicios\\Controllers\\GastosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T02:17:14.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResumenGastosViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Models\\ResumenGastosViewModel.cs",
+              "RelativeDocumentMoniker": "MvcEjercicios\\Models\\ResumenGastosViewModel.cs",
+              "ToolTip": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Models\\ResumenGastosViewModel.cs",
+              "RelativeToolTip": "MvcEjercicios\\Models\\ResumenGastosViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T02:12:29.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GastoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Models\\GastoViewModel.cs",
+              "RelativeDocumentMoniker": "MvcEjercicios\\Models\\GastoViewModel.cs",
+              "ToolTip": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Models\\GastoViewModel.cs",
+              "RelativeToolTip": "MvcEjercicios\\Models\\GastoViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T02:04:32.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Views\\Password\\Index.cshtml",
               "RelativeDocumentMoniker": "MvcEjercicios\\Views\\Password\\Index.cshtml",
               "ToolTip": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Views\\Password\\Index.cshtml",
@@ -79,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "PasswordController.cs",
               "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Controllers\\PasswordController.cs",
               "RelativeDocumentMoniker": "MvcEjercicios\\Controllers\\PasswordController.cs",
@@ -87,12 +155,11 @@
               "RelativeToolTip": "MvcEjercicios\\Controllers\\PasswordController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T01:27:36.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T01:27:36.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "PasswordViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Models\\PasswordViewModel.cs",
               "RelativeDocumentMoniker": "MvcEjercicios\\Models\\PasswordViewModel.cs",
@@ -100,12 +167,11 @@
               "RelativeToolTip": "MvcEjercicios\\Models\\PasswordViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T01:26:37.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T01:26:37.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Views\\Propina\\Index.cshtml",
               "RelativeDocumentMoniker": "MvcEjercicios\\Views\\Propina\\Index.cshtml",
@@ -117,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "PropinaController.cs",
               "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Controllers\\PropinaController.cs",
               "RelativeDocumentMoniker": "MvcEjercicios\\Controllers\\PropinaController.cs",
@@ -129,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PropinaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Models\\PropinaViewModel.cs",
               "RelativeDocumentMoniker": "MvcEjercicios\\Models\\PropinaViewModel.cs",
@@ -137,12 +203,11 @@
               "RelativeToolTip": "MvcEjercicios\\Models\\PropinaViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T01:13:12.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T01:13:12.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Program.cs",
               "RelativeDocumentMoniker": "MvcEjercicios\\Program.cs",
@@ -154,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Views\\Tareas\\Index.cshtml",
               "RelativeDocumentMoniker": "MvcEjercicios\\Views\\Tareas\\Index.cshtml",
@@ -166,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "TareasController.cs",
               "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Controllers\\TareasController.cs",
               "RelativeDocumentMoniker": "MvcEjercicios\\Controllers\\TareasController.cs",
@@ -178,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Tarea.cs",
               "DocumentMoniker": "C:\\Users\\jaram\\net8-mvc-ejercicios\\MvcEjercicios\\MvcEjercicios\\Models\\Tarea.cs",
               "RelativeDocumentMoniker": "MvcEjercicios\\Models\\Tarea.cs",
